@@ -30,3 +30,13 @@ const cart = [
         quantity: 4
     }
 ];
+let grandTotal = 0;
+for (let num of cart){
+let totalPrice = num.price
+console.log(totalPrice)
+let totalQuanity = num.quantity
+console.log(totalQuanity)
+let result = totalPrice * totalQuanity
+grandTotal += result;
+}
+console.log(grandTotal)

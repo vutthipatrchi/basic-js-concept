@@ -40,3 +40,24 @@ const cart = [
         quantity: 4
     }
 ];
+
+let result= 0
+
+function discountCalculation(price){
+    let totalPrice = cart.price
+    let totalQuantity = cart.quantity
+    let customerAmout = cart.price*cart.quantity
+
+     for(let num of cart){
+        console.log(num)
+     }
+     if(customerAmout  >10000){
+return "ได้ส่วนลด 10%"
+     } else if (customerAmout  >5000){
+        return "ได้ส่วนลด 5%"
+     } else {
+        return "ไม่ได้ส่วนลด เสียใจด้วย!"
+     }
+   return result ;
+}
+console.log(discountCalculation(cart))

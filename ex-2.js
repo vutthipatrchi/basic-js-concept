@@ -13,3 +13,11 @@
 7. hr เห็นว่าไม่ควรเก็บข้อมูลอายุของพนักงานไว้ ให้ลบอายุออก
 8. ให้แสดงข้อมูลของพนักงานคนดังกล่าวออกมาอีกรอบ
 */
+let employeeData = {firstname: "Rose", lastname: "Mary", Age: 25}
+console.log(employeeData);
+employeeData.position = "โปรแกรมเมอร์"
+console.log(employeeData);
+employeeData.position = "Programmer"
+console.log(employeeData);
+delete employeeData.Age
+console.log(employeeData);

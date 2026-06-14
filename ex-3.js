@@ -10,3 +10,13 @@
 8. คนงานในร้านบอกว่าจะเปลี่ยนผลไม้ในตำแหน่งที่ 3 (index 2) เป็น pineapple ให้ทำการเปลี่ยนสินค้า
 9. ให้แสดงข้อมูลรายการสินค้า ณ ปัจจุบัน
 */
+
+let sku =["apple", "orange", "pear","cherry"]
+console.log(sku);
+sku.pop();
+console.log(sku);
+sku.push("black berry")
+console.log(sku);
+console.log(sku[1]);
+sku[2] = "pineapple"
+console.log(sku);

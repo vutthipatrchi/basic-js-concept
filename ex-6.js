@@ -8,3 +8,20 @@
 สมมติลูกค้าซื้อสินค้าเป็นเงินทั้งสิ้น 6000 บาท จะเห็นข้อความ คุณได้ส่วนลด 5%
 สมมติลูกค้าซื้อสินค้าเป็นเงินทั้งสิ้น 100 บาท จะเห็นข้อความ คุณไม่ได้ส่วนลด
 */
+
+let price = 0;
+
+function discountCalculation(price){
+    if(price > 10000){
+        return price*0.9
+    } else if (price > 5000){
+        return price*0.95
+    } else {
+        return "ไม่ได้ส่วนลด"
+    }
+}
+
+console.log(discountCalculation(15000))
+console.log(discountCalculation(6000))
+console.log(discountCalculation(100))
+
